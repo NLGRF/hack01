@@ -31,6 +31,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 # add static openssl library as Android 6.0+ do not support openssl anymore
 contains(ANDROID_TARGET_ARCH,armeabi-v7a) {
     ANDROID_EXTRA_LIBS = \
-        $$PWD/../openssl-1.0.2k/libcrypto.so \
-        $$PWD/../openssl-1.0.2k/libssl.so
+        $$PWD/libcrypto.so \
+        $$PWD/libssl.so
 }
